@@ -33,8 +33,6 @@ import okhttp3.ResponseBody;
 import okio.Buffer;
 import okio.BufferedSource;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
-
 /**
  * An OkHttp interceptor which logs request and response information. Can be applied as an
  * {@linkplain OkHttpClient#interceptors() application interceptor} or as a {@linkplain
@@ -109,7 +107,7 @@ public final class HttpLoggingInterceptor implements Interceptor {
         /**r
          * A {@link Logger} defaults output appropriate for the current platform.
          */
-        Logger DEFAULT = LogUtil::i;
+        Logger DEFAULT = null;
     }
 
     public HttpLoggingInterceptor() {

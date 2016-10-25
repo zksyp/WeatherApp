@@ -1,5 +1,7 @@
 package com.shmilysyp.kaishen.weatherapp;
 
+import retrofit2.Retrofit;
+
 /**
  * Created by kaishen on 16/9/12.
  */
@@ -16,4 +18,11 @@ public class HttpUtil {
     public static int connectState = 0; // 当前网络状态
 
     final static String BASE_URL = "http://apis.baidu.com/apistore/weatherservice/";
+
+
+
+    private Retrofit mRetrofit;
+    private LoaderService mLoaderService;
+
+
 }

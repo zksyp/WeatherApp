@@ -1,4 +1,888 @@
 <resources>
     <string name="app_name">WeatherApp</string>
     <string name="action_settings">Settings</string>
+
+
+    <string name="welcome_button">进入卖好车</string>
+    <string name="welcome_button_img">进入卖好车…</string>
+
+    <string name="not_null">（必填）</string>
+    <string name="cancel">取消</string>
+    <string name="search">搜索</string>
+    <string name="reset">重置</string>
+    <string name="all">全部</string>
+    <string name="finish">完成</string>
+    <string name="allot">分配</string>
+    <string name="submit">提交</string>
+    <string name="resubmit">重新提交</string>
+    <string name="save">保存</string>
+    <string name="next">下一步</string>
+    <string name="phone">拨打</string>
+    <string name="ensure">确定</string>
+    <string name="delete">删除</string>
+    <string name="follow">跟进</string>
+
+    <string name="model">车型</string>
+    <string name="color">颜色 (外观/内饰)</string>
+    <string name="city">上牌城市</string>
+    <string name="validTime">有效时间</string>
+    <string name="refresh">更新</string>
+    <string name="area">拿车区域</string>
+
+
+    <!-- Common -->
+    <string name="common_submit">提交</string>
+    <string name="common_cancel_apply">撤销申请</string>
+    <string name="common_save">保存</string>
+    <string name="common_ensure">确定</string>
+    <string name="common_follow">跟进</string>
+    <string name="common_transfer">转让</string>
+    <string name="common_quote">报价</string>
+    <string name="common_next_step">下一步</string>
+    <string name="common_img_example">示例</string>
+    <string name="common_help_phone">如需帮助，请拨打4000390717</string>
+    <string name="to_email">发送至邮箱</string>
+    <string name="common_status">状态</string>
+    <string name="common_server_error">服务器开小差，稍后重试</string>
+    <string name="common_net_error">网络请求失败，稍后重试</string>
+    <string name="common_record_zero">查询记录为0</string>
+
+    <string name="search_common_brand">热门品牌</string>
+    <string name="search_recommend_brand">推荐专区</string>
+    <string name="search_history_clear">清空历史记录</string>
+
+    <string name="main_bottom_user">我的</string>
+    <string name="main_bottom_home">首页</string>
+    <string name="main_bottom_brand">车源</string>
+    <string name="main_bottom_seek">寻车</string>
+    <string name="main_bottom_custom">客服</string>
+    <string name="main_bottom_service">服务</string>
+
+
+    <string name="albums_choice">选择相册</string>
+    <string name="albums_take_picture">拍摄照片</string>
+    <string name="click_to_examble"><u>点击查看示例</u></string>
+
+    <string name="title_text_import">（%s）导入</string>
+    <string name="title_text_import_limit">（%1$s/%2$s）导入</string>
+
+
+    <string name="date_picker_hint_start">请选择起始时间</string>
+    <string name="date_picker_hint_end">请选择结束时间</string>
+    <!-- 用户中心 -->
+    <string name="user_center_title">我的卖好车</string>
+    <string name="user_center_change_pwd">修改密码</string>
+
+    <!-- 个人资料 -->
+    <string name="user_info_avatar">个人头像</string>
+    <string name="user_info_introduce">个人简介</string>
+    <string name="user_info_contact">联系方式</string>
+    <string name="user_info_mail">邮箱</string>
+    <string name="user_introduce_size">%s/20</string>
+    <string name="user_info_empty">暂未提供</string>
+    <string name="user_info_company_empty">未加入公司</string>
+    <string name="user_info_company_type_empty">未加入公司</string>
+    <string name="user_info_person_empty">未实名认证</string>
+    <string name="user_info_person_auth">已实名认证</string>
+
+    <string name="please_write">请填写</string>
+    <string name="please_select">请选择</string>
+
+    <!-- 身份信息 -->
+    <string name="identity_title">实名认证</string>
+    <string name="identity_name">真实姓名</string>
+    <string name="identity_number">身份证号码</string>
+    <string name="identity_not_choose">未选择</string>
+    <string-array name="person_card_type">
+        <item>身份证</item>
+        <item>个人名片</item>
+    </string-array>
+
+    <!-- 公司信息信息 -->
+    <string name="company_new_title">企业基础认证</string>
+    <string name="company_name">公司全称</string>
+    <string name="company_city">所在城市</string>
+    <string name="company_type">公司类型</string>
+    <string name="company_brand">主营品牌</string>
+    <string name="company_busi_img">营业执照</string>
+    <string name="company_store_img">门头照片</string>
+    <string name="company_front_img">前台照片</string>
+    <string name="company_type_title">选择公司类型</string>
+    <string name="company_brand_title">主营品牌</string>
+    <string name="company_brand_choose">（%1$s/%2$s）完成</string>
+
+
+    <!--  垫资认证  -->
+    <string name="loan_auth_busi_type">营业执照类型</string>
+
+    <string-array name="loan_position_type">
+        <item>法人</item>
+        <item>代理人</item>
+    </string-array>
+
+    <string-array name="buis_type">
+        <item>多证合一</item>
+        <item>单独营业执照</item>
+    </string-array>
+
+    <!--  信息认证  -->
+    <string name="info_auth_title">信息认证</string>
+
+    <string name="info_auth_ing_note">您的资料已经提交,正在审核中</string>
+    <string name="info_auth_failed_note">该项未通过审核,请核实后重新上传</string>
+    <string name="info_auth_suc_note">您已经通过该项认证,如需修改请联系客服</string>
+
+    <string name="info_auth_alert2">您尚未完成企业认证,还能试用找车功能3天.去认证</string>
+
+
+    <string name="info_injob_note">请上传在职证明</string>
+
+
+    <!-- 申请成为供货商 -->
+
+
+    <!-- 设置交易密码 -->
+
+    <!-- 绑定邮箱 -->
+
+    <!-- 消息中心 -->
+    <string name="message_right_title">全部已读</string>
+
+
+    <!-- 设置 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_notification">通知设置</string>
+    <string name="setting_invite">邀请好友</string>
+    <string name="setting_about">关于我们</string>
+    <string name="setting_clear_cache">清空缓存</string>
+    <string name="setting_quit">退出登录</string>
+
+    <!-- 登录注册 -->
+    <string name="send_valid_code">获取验证码</string>
+    <string name="login">登  录</string>
+    <string name="login_ing">登录中…</string>
+    <string name="register">注  册</string>
+    <string name="register_now"><u>立即注册</u></string>
+    <string name="find_password"><u>找回密码</u></string>
+    <string name="register_suc">注册成功</string>
+    <string name="fill_info">现在就认证</string>
+    <string name="register_just_look">先去看看</string>
+    <string name="find_pwd_suc">重设密码成功!</string>
+    <string name="merchant_tel">客服热线 400&#8211;039&#8211;0717</string>
+
+
+    <!-- 提示 -->
+    <string name="note_phone">手机号</string>
+    <string name="note_valid_code">请输入验证码</string>
+    <string name="note_realName">真实姓名</string>
+    <string name="note_password">密码</string>
+    <string name="note_reset_password">请输入新密码</string>
+    <string name="note_re_password">请重新输入密码</string>
+    <string name="note_office_phone">客服电话：400&#8211;039&#8211;0717</string>
+    <string name="note_register">点击[注册]按钮，代表您已阅读并同意</string>
+    <string name="note_register_contract">《注册协议》</string>
+
+    <!-- 警告 -->
+    <string name="warn_phone_number_invalid">请输入有效的手机号</string>
+    <string name="warn_valid_code_empty">请输入验证码</string>
+    <string name="warn_password_empty">请输入密码</string>
+    <string name="warn_realName_empty">请输入真实姓名</string>
+    <string name="warn_password_length_error">密码长度需要6~12位</string>
+    <string name="warn_re_password_error">两次输入的密码不一样，请核对</string>
+    <string name="warn_need_new_password">新旧密码相同，请重新输入</string>
+    <string name="warn_net_no_connect">网络无连接</string>
+    <string name="warn_content_empty">内容不可为空</string>
+    <string name="warn_upload_img_failed">\t上传失败\n点击重新上传</string>
+    <string name="warn_net_error">网络异常，请更换网络或稍后再试</string>
+
+    <string name="warn_login_unusual_title">账号异常</string>
+    <string name="warn_login_unusual_content">请拨打客服热线：400&#8211;039&#8211;0717</string>
+
+
+    <string name="image_viewer_indicator">%1$d/%2$d</string>
+    <string name="select_area">已选地区</string>
+    <string name="error_msg">载入失败</string>
+    <string name="reload">点击重试</string>
+    <string name="choose_city_title">选择地区</string>
+    <string name="about_us_01">\n\t\t\t
+      卖好车致力于服务全国汽车经销商。提供精选供应商车源，品质保证，搜索简单；资金支持帮助经销商解决周转需求，轻松垫款拿车；通过数据模型优化销售过程，提升线索转化率。更多专业销售工具，让卖车更简单！</string>
+
+
+    <string name="toast_email_empty">请输入邮箱地址</string>
+    <string name="toast_email_error">请输入正确的邮箱地址</string>
+
+    <!-- brand -->
+    <string name="hot_brand">热门品牌</string>
+    <string name="hot">热</string>
+    <string name="sku_search_text">搜索品牌/车型/指导价/配置/商家</string>
+    <string name="sku_search_des_text">搜索品牌/车型/商家</string>
+    <string name="sku_search_xunche_text">输入品牌/车型/颜色/配置等搜索</string>
+    <string name="sku_source">该车源信息来自互联网</string>
+    <string name="brand_list_title">品牌选车</string>
+
+    <!-- item -->
+
+    <string name="empty_car">暂无车辆</string>
+    <string name="empty_source">找不到指定车源</string>
+    <string name="empty_source_hint">您要找的车源可能已被下架或删除</string>
+    <string name="empty_data">暂无数据</string>
+    <string name="empty_car_filter">暂无筛选条件</string>
+
+    <string name="sku_detail_config_num">配置参数 (共%s项）</string>
+    <string name="sku_detail_pic_waiguan">外观(%s)</string>
+    <string name="sku_detail_pic_zhongkong">中控(%s)</string>
+    <string name="sku_detail_pic_chexiang">车厢(%s)</string>
+    <string name="sku_detail_pic_xijie">细节(%s)</string>
+
+
+    <string name="filter_clear">清空筛选条件</string>
+
+
+    <string name="contact">电话咨询</string>
+    <string name="contact_man">联系人</string>
+    <string name="resource">查看资源表</string>
+
+    <string name="car_num">全部车辆（%s辆）</string>
+
+
+    <!--订单 -->
+    <string name="order_loan_no">订单贷号：</string>
+    <string name="order_close">关闭订单</string>
+    <string name="order_apply_btn">申请</string>
+    <string name="order_check_text">提示：需要上传采购合同、支付定金、保证金照片且审核完成后才可进行确认订单贷操作！</string>
+    <string name="order_empty_text1">你还没有申请过订单贷哦</string>
+    <string name="order_empty_text2">垫款拿车 极速放款!</string>
+    <string name="order_empty_text3">资金周转 就用订单贷!</string>
+    <string name="order_empty_text4">订单贷垫资就三步!</string>
+    <string name="order_empty_text5">手机端企业授权</string>
+    <string name="order_empty_text6">个人中心-信息认证-企业授权\n上传相关资料</string>
+    <string name="order_empty_text7">轻轻松松在线申请</string>
+    <string name="order_empty_text8">在线点击申请订单贷,提交后就会\n有客服专员与您沟通</string>
+    <string name="order_empty_text9">放款成功</string>
+    <string name="order_empty_text10">找车-运输-资金,一切全在卖好车</string>
+    <string name="order_choose_frame_title">选择车架号 (%1$d/%2$d)</string>
+    <string name="order_payment_time">还款时间</string>
+    <string name="order_payment_time_tips1">温馨提示：\n1. 本司将根据该时间生成结算单，若实际打款时间晚于该时间，将会产生额外费用，请务必真实填写</string>
+    <string name="order_payment_time_tips2">2. 每日17:00前申请还款，结算日期为当日，否则为次日</string>
+    <string name="order_chassis_number_tips1">选择需要回款的车架号，提交车架号不能修改，\n请确认回款车架号的准确性</string>
+    <string name="order_confirm_pay">本单您还需要还款%1$s元</string>
+    <string name="order_confirm_dialog_tips">您输入的打款日期超过结算日期，若输入无误，请您重新生成结算单后再进行还款</string>
+    <!--<string name="order_car_snap">%1$s (%2$s/%3$s) %4$s</string>-->
+    <string name="order_statement_no">结算单号: %1$s</string>
+    <string name="order_statement_yuan">应还款总金额:  %1$s 元</string>
+    <string name="order_statement_yi_yuan">已还款金额:  %1$s 元</string>
+    <string name="order_statement_dai_yuan">待还款金额:  %1$s 元</string>
+    <string name="order_statement_shen_yuan">审核中金额:  %1$s 元</string>
+    <string name="order_carUnique">车架号: %1$s</string>
+    <string name="order_modelName">车型: %1$s</string>
+    <string name="order_color">颜色: %1$s</string>
+    <string name="order_logistics">%1$s  (第%2$s批)</string>
+    <string name="order_repayment_empty">暂无还款信息</string>
+
+
+    <string name="hint_loan_money">请输入借款总额</string>
+    <string name="hint_loan_name">请输入订单备注</string>
+
+    <string name="order_loan_tip">提示：订单备注用来对订单进行描述，方便查找</string>
+    <string name="order_loan_desc">借款总金额=合同金额-定金金额，不用减掉保证金</string>
+    <string name="order_loan_help">如需帮助，点击查看&lt;font color=\'#FF7200\'&gt;服务说明&lt;/font&gt;</string>
+    <string name="order_loan_download">下载在线协议</string>
+
+
+    <string name="order_loan_name">订单备注</string>
+
+
+    <string name="order_list_info_0">订单贷号：%s</string>
+    <string name="order_list_info_1">供应商：%s</string>
+    <string name="order_list_info_2">车型：%s</string>
+    <string name="order_list_info_4">车辆总数：%s辆</string>
+    <string name="order_list_info_5">借款总额：%s</string>
+
+
+    <string name="order_wait_text">请等待客服审核订单信息\n你可以提前上传资料</string>
+
+
+    <string name="order_failure_text_1">您已关闭订单！</string>
+    <string name="order_failure_text_2">订单未通过审核，已被关闭</string>
+
+    <string name="order_phone">疑问咨询电话：400–039–0717</string>
+
+
+    <!-- 线索 -->
+    <string name="clue_title">客户列表</string>
+    <string name="clue_level_multi_choice">客户等级（可多选）</string>
+    <string name="clue_status_multi_choice">客户状态（可多选）</string>
+    <string name="clue_return">回访</string>
+    <string name="empty_clue">暂无客户</string>
+    <string name="empty_clue_hint">暂无客户，立即添加客户信息</string>
+
+    <string name="clue_search_text">搜索姓名/手机/车型/备注</string>
+    <string name="clue_add">添加客户</string>
+    <string name="clue_import">导入通讯录</string>
+    <string name="clue_import_result">成功导入%1$s位联系人,失败%2$s人</string>
+    <string name="clue_header_base_info">基本信息</string>
+    <string name="clue_header_clue_info">线索相关</string>
+    <string name="clue_history">历史线索</string>
+    <string name="clue_history_sales">销售：%s</string>
+    <string name="clue_record">操作记录</string>
+    <string name="clue_arrival_times">到店%s次</string>
+    <string name="clue_delete_success">删除成功</string>
+    <string name="clue_operator">操作人：%s</string>
+    <string name="clue_message_operator">操作人：%s</string>
+    <string name="clue_message_sale">销售：%s</string>
+    <string name="clue_message_oldSale">原归属：%s</string>
+    <string name="clue_message_source">来源：%s</string>
+    <string name="clue_number">电话：%s</string>
+    <string name="clue_demand">需求与备注：%s</string>
+    <string name="clue_sex_male">先生</string>
+    <string name="clue_sex_female">女士</string>
+    <string name="clue_desc_arr">到店%s次&#160;&#160;|&#160;&#160;</string>
+    <string name="clue_desc_create">创建：%s</string>
+    <string name="clue_desc_source">来源：%s&#160;&#160;|&#160;&#160;</string>
+    <string name="clue_desc_operator">操作人：%s&#160;&#160;|&#160;&#160;</string>
+    <string name="clue_content_number">电话：%s&#160;&#160;&#160;&#160;</string>
+    <string name="clue_content_sale">客户被分配给：%s</string>
+    <string name="clue_distribution">分配</string>
+
+    <string name="clue_change">修改</string>
+    <string name="clue_series_choose">（已选%s个车系）</string>
+
+    <string name="clue_refresh_tip">"是否更新寻车线索？\n更新后原有线索将会被覆盖"</string>
+    <string name="clue_searching">正在搜索...</string>
+
+    <!-- 账号管理-->
+    <string name="account_manage_title">员工管理</string>
+    <string name="account_edit_title">编辑账号</string>
+    <string name="account_manage_staff">我的员工</string>
+    <string name="account_manage_pending">待审核(%s)</string>
+    <string name="account_item_edit">编辑</string>
+    <string name="account_item_position">职位:</string>
+    <string name="account_item_status">状态:</string>
+    <string name="account_item_tel">电话:</string>
+    <string name="account_item_message">留言:</string>
+    <string name="account_item_reject">驳回</string>
+    <string name="account_item_adopt">通过</string>
+    <string name="account_name">真实姓名</string>
+    <string name="account_mobile">联系电话</string>
+    <string name="account_position">职位</string>
+    <string name="account_remove">移出公司</string>
+    <string name="account_remove_hint">是否将该用户移出公司</string>
+
+    <string name="dialog_account_reject_reason">驳回加入公司请求</string>
+    <string name="dialog_account_reject_hint">请输入您的驳回理由</string>
+    <string name="dialog_account_ensure">确定</string>
+    <string name="dialog_account_cancel">取消</string>
+    <string name="account_edit_hint">管理员不可被编辑</string>
+    <string name="account_add_next">下一步</string>
+    <string name="account_add_empty_hint">手机号码不能为空</string>
+
+    <string name="dialog_title_adopt">通过新员工为</string>
+    <string name="account_empty_view">暂无员工</string>
+    <string name="account_add_title">添加账号</string>
+    <string name="account_add_mobile_hint">请输入正确的联系电话</string>
+
+    <!--客服-->
+
+    <!--报表-->
+    <string name="report_overview">总览</string>
+    <string name="report_sale">销售</string>
+    <string name="report_sellerWorkCount">销售工作统计</string>
+    <string name="report_noCallback">过期未回访</string>
+    <string name="report_first_noFollow">首次未跟进</string>
+    <string name="report_byDay">按日</string>
+    <string name="report_byWeek">按周</string>
+    <string name="report_byMonth">按月</string>
+    <string name="report_byDayTrend">按日查看趋势</string>
+    <string name="report_byWeekTrend">按周查看趋势</string>
+    <string name="report_byMonthTrend">按月查看趋势</string>
+    <string name="report_saleOverview">业绩总览</string>
+    <string name="report_clueTrendAnalysis">线索趋势分析</string>
+    <string name="report_newAddClue">新增线索</string>
+    <string name="report_followClue">跟进线索</string>
+    <string name="report_loseClue">流失线索</string>
+    <string name="report_orderCar">下订车辆</string>
+    <string name="report_dealCar">交车车辆</string>
+    <string name="report_insuranceCar">保险数量</string>
+    <string name="report_mortgageCar">按揭数量</string>
+    <string name="report_toStoreDesc">进店%1$s人 总数%2$s人</string>
+    <string name="report_dealDesc">成交%1$s人 总数%2$s人</string>
+    <string name="report_insuranceDesc">店保%1$s人 订单%2$s人</string>
+    <string name="report_mortgageDesc">按揭%1$s人 订单%2$s人</string>
+
+    <!--客户资料-->
+    <string name="client_new_title">新增客户</string>
+    <string name="client_edit_title">修改客户信息</string>
+    <string name="client_edit_contact_title">修改联系方式</string>
+    <string name="client_info">基础信息</string>
+    <string name="client_mobile">联系方式</string>
+    <string name="client_mobile_hint">请输入客户电话</string>
+    <string name="client_name">姓名</string>
+    <string name="client_name_hint">请填写用户姓名</string>
+    <string name="client_gender">性别</string>
+    <string name="client_more">更多资料</string>
+    <string name="client_more_hint">联系方式/照片/身份证等</string>
+    <string name="client_source">来源</string>
+    <string name="client_source_hint">找不到来源？请联系管理员添加</string>
+    <string name="client_intro">介绍人</string>
+    <string name="client_intro_hint">请填写</string>
+    <string name="client_memo">客户备注</string>
+    <string name="client_memo_hint">请填写客户信息备注</string>
+    <string name="client_other_phone">其他手机</string>
+    <string name="client_other_phone_hint">请输入其他手机</string>
+    <string name="client_work_phone">工作电话</string>
+    <string name="client_work_phone_hint">请输入工作电话</string>
+    <string name="client_id_card">身份证号</string>
+    <string name="client_id_card_hint">请输入身份证号</string>
+    <string name="client_wechat">微信</string>
+    <string name="client_wechat_hint">请输入微信号</string>
+    <string name="client_qq">QQ</string>
+    <string name="client_qq_hint">请输入QQ号码</string>
+    <string name="client_birthday">生日</string>
+    <string name="client_birthday_hint">请选择生日</string>
+    <string name="client_pic_hint">上传用户名片、身份证等照片（%s/9）</string>
+    <!--线索资料即买车信息-->
+    <string name="clue_info">买车需求</string>
+    <string name="clue_edit_title">修改买车需求</string>
+    <string name="clue_status">客户状态</string>
+    <string name="clue_status_cur">当前状态: %s</string>
+    <string name="clue_level">客户级别</string>
+    <string name="clue_level_cur">当前级别: %s</string>
+    <string name="clue_follow_time">下次回访时间</string>
+    <string name="clue_time_hint">请选择</string>
+    <string name="clue_budget">预算</string>
+    <string name="clue_budget_unit">万</string>
+    <string name="clue_budget_unit2">万 -</string>
+    <string name="clue_budget_min">0</string>
+    <string name="clue_budget_max">9999</string>
+    <string name="clue_car_intention">意向车系</string>
+    <string name="clue_car_buy">购买车系</string>
+    <string name="clue_car_buy_hint">添加意向外车系</string>
+    <string name="clue_car_buy_new_hint">添加车系</string>
+    <string name="clue_car_intention_hint">（必填，可添加5个）</string>
+    <string name="clue_connect">本次沟通方式</string>
+    <string name="clue_order_time">下订时间</string>
+    <string name="clue_estimated_time">预计交车时间</string>
+    <string name="clue_delivery_time">交车时间</string>
+    <string name="clue_unsubscribe_time">退订时间</string>
+    <string name="clue_unsubscribe_reason">退订原因</string>
+    <string name="clue_unsubscribe_reason_hint">请输入其他原因</string>
+    <string name="clue_guarantee">是否店内保险</string>
+    <string name="clue_mortgage">是否店内按揭</string>
+    <string name="clue_memo">买车备注</string>
+    <string name="clue_memo_hint">请填写买车需求备注</string>
+    <string name="clue_follow_memo">跟进记录</string>
+    <string name="clue_follow_memo_hint">请填写跟进记录</string>
+    <string name="clue_intention_choose">选择车系</string>
+    <string name="clue_buy_choose">选择意向外车系</string>
+
+    <string name="customer_original_consultant">原归属顾问</string>
+    <string name="customer_new_title">新增客户</string>
+    <string name="customer_name">姓名</string>
+    <string name="customer_hint">请输入</string>
+    <string name="customer_gender">性别</string>
+    <string name="customer_mobile">手机</string>
+    <string name="customer_level">级别</string>
+    <string name="customer_stayTime">逗留时长</string>
+    <string name="customer_min">(分钟)</string>
+    <string name="customer_source">来源</string>
+    <string name="customer_introduce">介绍人</string>
+    <string name="customer_demand">需求及备注</string>
+    <string name="customer_type">客户类型</string>
+    <string name="customer_hint_name">请输入姓名</string>
+    <string name="customer_hint_mobile">请输入手机</string>
+    <string name="customer_hint_stayTime">请输入逗留时长(分钟)</string>
+    <string name="customer_budget_unit">单位:万</string>
+    <string name="customer_budget">预算</string>
+    <string name="customer_make">品牌车系</string>
+    <string name="customer_mark_hint">（可添加5个）</string>
+    <string name="customer_remark">备注</string>
+    <string name="customer_demand_add_hint">最多可添加%s个</string>
+    <string name="customer_hot_brand">热门品牌</string>
+    <string name="customer_select_brand">选择车系</string>
+    <string name="customer_edit_title">修改客户基本信息</string>
+    <string name="customer_hint_memo">请输入备注</string>
+    <string name="customer_new_clue_title">新增线索</string>
+    <string name="customer_seller">销售归属</string>
+    <string name="customer_relegation">现归属</string>
+    <string name="customer_old_relegation">原归属</string>
+    <string name="customer_hint_introduce_mobile">请输入介绍人电话</string>
+    <string name="customer_hint_introduce_name">请输入介绍人姓名</string>
+    <string name="customer_other_tel">其他手机</string>
+    <string name="customer_work_tel">工作电话</string>
+    <string name="customer_id_card">身份证号</string>
+    <string name="customer_birth_day">生日</string>
+    <string name="customer_wechat">微信</string>
+    <string name="customer_qq">QQ</string>
+    <string name="customer_buy_car">购买车系</string>
+    <string name="customer_estimatedTime">预计交车</string>
+    <string name="customer_isGuarantee">是否店保</string>
+    <string name="customer_isMortgage">是否按揭</string>
+    <string name="customer_unsubscribeTime">退订时间</string>
+    <string name="customer_unsubscribe">退订原因</string>
+    <string name="customer_memo">买车备注</string>
+    <string name="customer_other_clue">客户其他线索</string>
+    <string name="customer_history_price">历史报价记录</string>
+    <string name="customer_buy_car_need">买车需求</string>
+    <string name="customer_record">操作记录</string>
+    <string name="customer_basic_info">基本资料</string>
+
+    <!--待办-->
+    <string name="seller_todo_title">销售待办</string>
+    <string name="clients_distribute">分配</string>
+    <string name="clients_cancel">取消</string>
+
+    <!--参数设置-->
+    <string name="preference_setting_title">参数设置</string>
+    <string name="preference_new_user_title">新客户回访</string>
+    <string name="preference_follow_title">跟进回访时间</string>
+    <string name="preference_predict_title">预计交车回访</string>
+    <string name="preference_defeat_title">战败回访时间</string>
+    <string name="preference_keep_title">已交车回访</string>
+    <string name="preference_source_title">线索来源设置</string>
+    <string name="preference_delete_source">删除线索来源</string>
+    <string name="preference_delete_source_content">是否删除线索来源</string>
+    <string name="preference_source">来源</string>
+    <string name="preference_source_add_title">增加线索来源</string>
+    <string name="preference_source_add_hint">请录入线索来源</string>
+    <string name="preference_manager">销售主管</string>
+    <string name="preference_seller">销售顾问</string>
+
+    <string name="password_reset_hint">首次登录,请设置新密码</string>
+    <string name="password_hint">新密码</string>
+    <string name="password_again_hint">请重新输入密码</string>
+    <string name="password_reset_suc">密码设置成功,请重新登录</string>
+
+    <!--修改密码-->
+    <string name="change_pwd_newPwd">新密码</string>
+    <string name="change_pwd_originPwd">原始密码</string>
+    <string name="change_pwd_surePwd">确认密码</string>
+    <string name="change_pwd_inputOriginPwd">请输入原始密码</string>
+    <string name="change_pwd_inputNewPwd">请输入新密码</string>
+    <string name="change_pwd_inputAgainPwd">请再次输入新密码</string>
+
+    <!--首页功能title-->
+    <string name="home_service_title">常用服务</string>
+    <string name="home_message_title">我的消息</string>
+    <string name="home_explore_title">精选活动</string>
+    <string name="home_popup_guide_tips">点击这里就可以自行设置常用服务了</string>
+
+
+    <string-array name="company_type_array">
+        <item>品牌4s店</item>
+        <item>港口商家</item>
+        <item>综合展厅</item>
+        <item>资源公司</item>
+    </string-array>
+
+    <string name="clean">清除</string>
+    <string name="source_manage_guide_2">和密码登录后即可发布车源</string>
+
+
+    <string name="source_move_start">我们检测到您在其他平台发布过车源，将会帮您导入系统中。导入后，您的车源就可以在“卖好车”App中被搜索到。</string>
+    <string name="source_move_finish">您可以在车源管理中找到这些车源，并对他们进行编辑、上下架、删除等操作</string>
+    <string name="source_move_step_1">正在从外部网站获取数据…</string>
+    <string name="source_move_step_2">正在将数据导入卖好车…</string>
+    <string name="source_move_import_start">开始导入</string>
+    <string name="source_move_import_finish">导入完成！</string>
+    <string name="source_move_manage">管理我的车源</string>
+
+    <string name="my_source_detail_edit">修改</string>
+    <string name="my_source_detail_delete">删除</string>
+    <string name="my_source_detail_tab_up">出售中</string>
+    <string name="my_source_detail_tab_down">已下架</string>
+    <string name="my_source_detail_up">上架</string>
+    <string name="my_source_detail_down">下架</string>
+    <string name="source_detail_configuration">配置</string>
+    <string name="source_detail_remark">备注</string>
+    <string name="source_detail_pic">图片</string>
+    <string name="source_detail_pic_num">图片(%s/9)</string>
+
+    <string name="source_detail_delete_dialog">是否删除该车源？</string>
+    <string name="source_detail_title">车辆详情</string>
+    <string name="source_manager_title">车源管理</string>
+    <string name="source_publish_title">发布车源</string>
+    <string name="source_edit_title">修改车源</string>
+    <string name="source_manager_fresh">批量刷新</string>
+    <string name="source_manager_fresh_suc">批量刷新成功！</string>
+    <string name="source_manager_publish">发布车源</string>
+    <string name="source_manager_share">批量分享</string>
+    <string name="source_share_button">确认分享</string>
+
+    <string name="source_check">确定（%s条车源）</string>
+    <string name="source_frameNo">车架号：%s</string>
+    <string name="source_area">销%s</string>
+    <string name="source_city">车在%s</string>
+    <string name="source_filter">筛选条件：%s</string>
+    <string name="source_edit">请输入自定义%s</string>
+    <string name="source_edit_titles">自定义%s</string>
+    <string name="source_fast_choose_car">输入指导价快速选择车型</string>
+    <string name="source_fast_choose_title">快速选择车型</string>
+    <string name="source_brand_title">选择品牌</string>
+    <string name="source_choose_title">选择%s</string>
+
+    <!--订单相关-->
+    <string name="title_indent_type">订单列表</string>
+    <string name="indent_buy">买车订单</string>
+    <string name="indent_sale">卖车订单</string>
+    <string name="contact_merchant">联系卖家</string>
+    <string name="contact_buyer">联系买家</string>
+    <string name="confirm_indent">确认订单</string>
+    <string name="no_indent">暂无相关订单</string>
+    <string name="buyer_company">买家公司</string>
+    <string name="saler_company">卖家公司</string>
+    <string name="contacter">联系人</string>
+    <string name="phone_no">联系方式</string>
+    <string name="car_name">车型名称</string>
+    <string name="outter_color">外观</string>
+    <string name="inner_color">内饰</string>
+    <string name="agreement_money">合同金额</string>
+    <string name="earnest_money">定金金额</string>
+    <string name="is_loan">是否垫资</string>
+    <string name="indent_data">订单资料</string>
+    <string name="agreement_pics">采购合同照片</string>
+    <string name="agreement">采购合同</string>
+    <string name="indent_trace">订单轨迹</string>
+    <string name="close_indent">关闭订单</string>
+    <string name="indent_detail">订单详情</string>
+    <string name="confirm_car_info">车辆信息确认</string>
+    <string name="merchant_info">商家信息</string>
+    <string name="agreement_money_yuan">合同金额(元)</string>
+    <string name="earnest_money_yuan">定金金额(元)</string>
+    <string name="apply_loan">申请垫款</string>
+    <string name="loan_total_money">垫款总金额</string>
+    <string name="loan_true">是</string>
+    <string name="loan_false">否</string>
+
+    <string name="source_share_title">分享</string>
+    <string name="source_share_batch_title">批量分享</string>
+    <string name="source_filter_title">筛选</string>
+    <string name="source_publish_info">车辆信息</string>
+    <string name="source_publish_info_hint">请选择车规／品牌／车型</string>
+    <string name="source_publish_color">外观／内饰</string>
+    <string name="source_publish_color_hint">请选择外观和内饰</string>
+    <string name="source_publish_status">现车／期车</string>
+    <string name="source_publish_status_hint">请选择类型</string>
+    <string name="source_publish_price">报价</string>
+    <string name="source_publish_frame">车架号：</string>
+    <string name="source_publish_frame_hint">请输入车架号</string>
+    <string name="source_publish_area">销售区域</string>
+    <string name="source_publish_area_hint">请选择销售区域</string>
+    <string name="source_publish_time">到港时间</string>
+    <string name="source_publish_time_hint">请输入到港时间</string>
+    <string name="source_publish_formality">手续</string>
+    <string name="source_publish_formality_hint">请选择手续情况</string>
+    <string name="source_publish_city">车辆所在地</string>
+    <string name="source_publish_city_hint">请选择车辆所在地</string>
+    <string name="source_publish_config">加配</string>
+    <string name="source_publish_config_hint">请输入加配装置</string>
+    <string name="source_publish_remark">备注</string>
+    <string name="source_publish_remark_hint">请输入备注信息</string>
+    <string name="source_publish_info_warn">重新选择车辆信息将会丢失您当前输入的内容，是否继续？</string>
+    <string name="choose_custom">自定义</string>
+    <string name="source_color">%1$s / %2$s</string>
+    <string name="source_prov_city">%1$s %2$s</string>
+    <string name="source_detail_toast">商品已%s</string>
+    <string name="source_detail_guide">指导价: %s万</string>
+    <string name="source_detail_guide_without">指导价: %s</string>
+    <string name="source_detail_config">配置价: %s万</string>
+    <string name="source_detail_price_next">%s万</string>
+    <string name="source_publish_status_warn">修改车源类型，会导致选填字段内容丢失，是否修改？</string>
+    <string name="dialog_title_status">请选择车源类型</string>
+    <string name="source_color_empty">%s为必填字段</string>
+    <string name="source_publish_exit">退出编辑将会丢失您当前输入的内容，是否退出？</string>
+    <string name="source_invalid_hint">──────\t\t\t以下为停售%s\t\t\t──────</string>
+    <string name="source_invalid_btn_open">点击选择停售%s</string>
+    <string name="source_invalid_btn_close">点击隐藏停售%s</string>
+    <string name="source_tips_size">已帮您推送&lt;font color=\'#FF8903\'&gt;%1$s&lt;/font&gt;个相关的寻车用户</string>
+    <string name="seek_title_hint">填写项目（必填）</string>
+    <string name="choose_hint">请选择</string>
+    <string name="customer_sex">性别</string>
+    <string name="customer_status">状态</string>
+    <string name="customer_contact_add">添加联系方式</string>
+    <string name="customer_contact_edit">编辑联系方式</string>
+    <string name="clue_follow_level">客户级别</string>
+    <string name="clue_follow_level_txt">当前%s</string>
+    <string name="clue_arrive">客户本次是否到店</string>
+    <string name="clue_follow_status">客户状态</string>
+    <string name="clue_follow_status_txt">当前状态: %s</string>
+    <string name="clue_unsubscribe">退订原因</string>
+    <string name="customer_follow_title">选择意向外车系</string>
+    <string name="seek_create_time">创建时间: %s</string>
+    <string name="edit_hint">请输入%s</string>
+    <string name="seek_tips_size">该寻车信息已推送至&lt;font color=\'#FF8903\'&gt;%1$s&lt;/font&gt;家相关供应商</string>
+    <string name="seek_top_modify_details">• 除了车型以外的信息都可以修改 •</string>
+
+    <string name="statement_success_notice">你的还款已成功</string>
+    <string name="delete_fail_notice">您的还款申请已被驳回，请删除错误信息后重新申请</string>
+    <string name="statement_fail_notice">您的还款信息已被驳回，请核对还款记录后重新申请</string>
+    <string name="statement_shenheing">您的还款正在审核中，请耐心等待</string>
+
+    <string name="ques_guide_problem">问题 (%1$s/%2$s)</string>
+    <string name="ques_guide_point">&lt;font color=\'#C4C4C4\'&gt;•&lt;/font&gt;&lt;font color=\'#D5D5D5\'&gt; •&lt;/font&gt;&lt;font color=\'#EAEAEA\'&gt; •&lt;/font&gt;</string>
+
+    <string-array name="dialog_status">
+        <item>现车</item>
+        <item>期车</item>
+    </string-array>
+
+    <string-array name="contacts">
+        <item>住宅电话</item>
+        <item>工作电话</item>
+        <item>其他手机</item>
+        <item>微信</item>
+        <item>QQ</item>
+        <item>邮箱</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="params_predict_done">
+        <item>交车前</item>
+        <item>交车当天</item>
+    </string-array>
+
+    <string-array name="params_saler_types">
+        <item>销售顾问</item>
+        <item>销售主管</item>
+    </string-array>
+
+    <string-array name="params_clue_operation">
+        <item>客户报价</item>
+        <item>历史报价</item>
+    </string-array>
+
+    <string-array name="params_clue_operation_more">
+        <item>客户报价</item>
+        <item>历史报价</item>
+        <item>删除客户信息</item>
+    </string-array>
+
+    <!--寻车相关-->
+    <string name="online_findcar">在线寻车</string>
+    <string name="all_seek">全部寻车</string>
+    <string name="my_seek">我的寻车</string>
+    <string name="my_clue">我的线索</string>
+    <string name="receive_setting">接收设置</string>
+    <string name="select_receive_brand">品牌设置</string>
+    <string name="receive_brand_set">已接收品牌</string>
+    <string name="area_select">区域选择</string>
+    <string name="sell_city">卖 %s</string>
+    <string name="guide_price">指导价：%s</string>
+    <string name="wish_price">期望价：%s</string>
+    <string name="empty_my_seek_desc">没有找到您发布的寻车信息\n快去发布寻车让供应商知道你要什么样的车</string>
+    <string name="empty_my_seek_expired">没有过期的寻车信息</string>
+    <string name="empty_my_seek_deleted">没有删除的寻车信息</string>
+    <string name="empty_my_clue_desc">您还未设置接收品牌,或者品牌设置的过于冷门,\n修改品牌设置尝试接收更多品牌信息</string>
+    <string name="publish_seek">发布寻车</string>
+    <string name="complete_auth_info_first">请先完成个人或企业认证!</string>>
+
+    <string name="go_complete">去认证</string>
+    <string name="viewers_title">浏览记录</string>
+    <string name="repeated_report_tip">您已经举报过该条寻车，我们会及时处理</string>
+    <string name="report_sucess_tip">感谢您的举报，我们会及时处理</string>
+    <string name="empty_report_info_tip">请填写您的举报理由。</string>
+    <string name="republish">再发一条</string>
+    <string name="receive_empty_hint">你还没有订阅任何品牌,无法接收到任何线索哦~</string>
+    <string name="seek_to_top_failed_hint">今日刷新次数已达上限,明天再来吧!</string>
+    <string name="seek_to_top_success_hint">刷新成功，该寻车信息已排至队列顶端！</string>
+    <string name="seek_detail_overdue">该条寻车信息已过期,无法报价</string>
+    <string name="seek_detail_delete">该条寻车信息已删除,无法报价</string>
+    <string name="empty_seek_desc">没有找到合适的寻车信息</string>
+
+    <string name="empty_my_quote_desc">没有找到您的报价信息</string>
+
+    <string name="go_share">去分享</string>
+
+
+    <!--dms2.1 保险计算器相关-->
+    <string name="loan_calc">贷款计算器</string>
+
+    <!--dms2.1 保险计算器相关-->
+    <string name="insurance_calc">保险计算器</string>
+    <string name="insurance_origin_price">保险原价</string>
+    <string name="insurance_contain_yuan">(元)</string>
+    <string name="insurance_yuan">元</string>
+    <string name="insurance_discount_price">折扣价</string>
+    <string name="insurance_statement">本结果仅供参考,实际费用以当地缴费为准</string>
+    <string name="insurance_input_naked">请输入裸车价</string>
+    <string name="insurance_traffic">交强险</string>
+    <string name="insurance_standard">规格</string>
+    <string name="insurance_discount">折扣</string>
+    <string name="insurance_commercial">商业险</string>
+    <string name="insurance_third">第三者责任险</string>
+    <string name="insurance_own">车辆损失险</string>
+    <string name="insurance_theft">全车盗抢险</string>
+    <string name="insurance_glass">玻璃单独破碎险</string>
+    <string name="insurance_combus">自燃损失险</string>
+    <string name="insurance_wa">不计免赔特约险</string>
+    <string name="insurance_no_lab">无过责任险</string>
+    <string name="insurance_per_lab">车上人员责任险</string>
+    <string name="insurance_scratch">车身划痕险</string>
+    <string name="insurance_no_discount">无折扣</string>
+
+    <!-- 海报生成器相关-->
+    <string name="poster_create">海报助手</string>
+    <string name="poster_companyName">公司名称</string>
+    <string name="poster_input_companyName">请输入公司名称</string>
+    <string name="poster_contactName">联系人</string>
+    <string name="poster_input_contactName">请输入联系人</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="msg_model_empty">还没有添加的模板</string>
+    <string name="msg_model_empty_btn">添加模板</string>
+    <string name="apply_statement">新增结算单</string>
+    <string name="statement_data">结算日期</string>
+    <string name="statement_number">结算单号</string>
+    <string name="entrust_team">委托服务方</string>
+    <string name="entrusted_team">受托服务方</string>
+    <string name="send_data">运达日期</string>
+    <string name="borrow_money">代垫运费</string>
+    <string name="logistics_company">物流公司</string>
+    <string name="sendcar_area">交车地点</string>
+    <string name="service_contract">服务合同金额</string>
+    <string name="ensure_money">保证金</string>
+    <string name="contract_info">合同信息</string>
+    <string name="logistics_info">物流信息</string>
+    <string name="pey_info">费用信息</string>
+    <string name="outdate_info">超期信息</string>
+    <string name="ensure_return_money">确认还款</string>
+    <string name="go_on_returnmoney">继续还款</string>
+    <string name="return_note">还款记录</string>
+    <string name="statement_finishing">结算单生成中</string>
+    <string name="statement_sub_notice">结算单将于1个工作日内生成，请耐心等待生成后将以短信方式通知您</string>
+    <string name="quota_customer">客户报价</string>
+    <string name="quota_history">历史报价</string>
+    <string name="delete_clue">删除客户信息</string>
+    <string name="poster_contact">联系电话</string>
+    <string name="poster_input_contact">请输入联系人电话</string>
+    <string name="poster_introduction">一句话介绍</string>
+    <string name="poster_companyAddress">公司地址</string>
+    <string name="poster_input_companyAddress">请输入公司地址</string>
+    <string name="business_card">上传&lt;b&gt;&lt;tt&gt;名片&lt;/tt&gt;&lt;/b&gt;正面</string>
+    <string name="share">分享</string>
+    <string name="report">举报</string>
+    <string name="need_to_call">如需帮助,请拨打4000390717</string>
+
+
+    <!--long text-->
+    <string name="admin_auth_text">致：卖好车（杭州一骑轻尘信息技术有限公司)\n本公司委托代理人（姓名：&#160;&#160;&#160;，身份证号：&#160;&#160;&#160;&#160;，手\n机号：&#160;&#160;&#160;&#160;）代为在卖好车App中承
+        担公司管理员的\n职责，包括但不限于卖好车App内公司员工管理、车源管理及规则设置、订单管理、购买增值服务等.\n卖好车App“管理员申请”（根据最终卖好车实际情况进行调整）时所上传之证件为我司审核同意后上传。\n我司将妥善保管该密
+        码，并于变更联系人时重置密码以维护该账号之安全。\n我司承诺：该账号进行之操作均为我司认可，我司将无异议地履行该操作附随之义务。\n\n\n
+
+单位公章（盖章）\n
+
+</string>
+    <string name="admin_auth_text_btm">&#160;&#160;(1、盖公章；）\n\n（2、建议提供彩色的图片）\n\n &#160;&#160;年&#160;&#160;月&#160;&#160;日</string>
+    <string name="in_job_title">《在职证明》是用来证明您当前在申请的企业就职的文书。</string>
+    <string name="in_job_content">要求如下：\n
+1. 在职证明中需要包含真实姓名、身份证号、加盖\n公章三个要素\n2. 被证明人的姓名与当前帐号实名认证的姓名一致\n3. 公章上的公司名称与申请加入的公司名称一致\n\n您可以使用自己公司的《在职证明》，也可以下载卖好车提供的《在职证明模板》。</string>
+    <string name="setting_change">切换网络环境</string>
+    <string name="empty_seller">暂无员工</string>
+
+    <string-array name="dms_sales">
+        <item>5&#8211;10台</item>
+        <item>10&#8211;20台</item>
+        <item>20台以上</item>
+    </string-array>
+
 </resources>
+

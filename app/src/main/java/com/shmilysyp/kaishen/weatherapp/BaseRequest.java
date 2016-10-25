@@ -12,4 +12,6 @@ public class BaseRequest {
     @SerializedName("apikey")
     @Expose
     public String apikey = "22ca8832d8473387dc9424e83d940834";
+
+    private String getApikey(){return apikey;}
 }
