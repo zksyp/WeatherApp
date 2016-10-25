@@ -37,4 +37,6 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
     compile 'me.tatarka:gradle-retrolambda:3.3.0-beta4'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.jude:easyrecyclerview:4.0.6'
 }

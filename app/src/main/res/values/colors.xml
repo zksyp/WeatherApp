@@ -107,5 +107,13 @@
 
     <!--深灰色文字颜色-->
     <color name="grey_dark_888888">#888888</color>
-    
+
+    <!--主背景颜色-->
+    <color name="yellow">#F4E1C1</color>
+
+    <color name="red_C84F01">#C84F01</color>
+
+    <color name="red_84593E">#84593E</color>
+
+    <color name="yellow_ECD9B9">#ECD9B9</color>
 </resources>

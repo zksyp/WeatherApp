@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/yellow"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/base_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/black_373737"
+            android:textSize="@dimen/font_big_size"
+            android:textStyle="italic"
+            tools:text="WED"/>
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_week"
+            android:scaleType="center"
+            android:src="@drawable/icon_share_white"/>
+
+        <TextView
+            android:id="@+id/tv_max_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/tv_week"
+            android:gravity="bottom"
+            android:textColor="@color/red_C84F01"
+            android:textSize="60dp"
+            tools:text="8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tv_max_temp"
+            android:layout_toRightOf="@id/tv_max_temp"
+            android:gravity="bottom"
+            android:textColor="@color/red_C84F01"
+            android:textSize="60dp"
+            android:text="@string/temp_hint"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_padding"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:text="MIN"
+                android:textColor="@color/red_84593E"
+                android:textSize="@dimen/font_header_size"/>
+
+            <TextView
+                android:id="@+id/tv_min_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/red_84593E"
+                android:textSize="@dimen/font_big_title"
+                tools:text="3°"/>
+
+        </LinearLayout>
+
+        <View style="@style/normal_vertical_line"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_padding"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:text="WS"
+                android:textColor="@color/red_84593E"
+                android:textSize="@dimen/font_header_size"/>
+
+            <TextView
+                android:id="@+id/tv_wind_strong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/red_84593E"
+                android:textSize="@dimen/font_big_title"
+                tools:text="微风"/>
+
+        </LinearLayout>
+
+        <View style="@style/normal_vertical_line"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_padding"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:text="PM2.5"
+                android:textColor="@color/red_84593E"
+                android:textSize="@dimen/font_header_size"/>
+
+            <TextView
+                android:id="@+id/tv_value_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/red_84593E"
+                android:textSize="@dimen/font_big_title"
+                tools:text="3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

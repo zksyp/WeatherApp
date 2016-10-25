@@ -884,5 +884,6 @@
         <item>20台以上</item>
     </string-array>
 
+    <string name="temp_hint">°</string>
 </resources>
 

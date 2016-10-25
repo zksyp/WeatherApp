@@ -1,4 +1,4 @@
-package com.shmilysyp.kaishen.weatherapp;
+package com.shmilysyp.kaishen.weatherapp.activity.base;
 
 import android.os.Handler;
 import android.os.Looper;

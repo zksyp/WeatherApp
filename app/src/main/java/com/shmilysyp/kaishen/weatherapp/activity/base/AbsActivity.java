@@ -1,4 +1,4 @@
-package com.shmilysyp.kaishen.weatherapp.Activity;
+package com.shmilysyp.kaishen.weatherapp.activity.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.shmilysyp.kaishen.weatherapp.HandlerProviderActivity;
 import com.shmilysyp.kaishen.weatherapp.R;
 
 import butterknife.Bind;

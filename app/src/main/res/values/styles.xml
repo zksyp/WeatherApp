@@ -643,4 +643,10 @@
         <item name="android:textColor">@color/grey_AFAFAF</item>
     </style>
 
+    <style name="normal_vertical_line">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/yellow_ECD9B9</item>
+    </style>
+
 </resources>
