@@ -3,7 +3,7 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:background="@color/yellow"
+              android:background="@color/yellow_F4E1C1"
               android:orientation="horizontal">
 
     <RelativeLayout
@@ -18,46 +18,50 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginBottom="@dimen/base_padding"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="20dp"
             android:textColor="@color/black_373737"
             android:textSize="@dimen/font_big_size"
             android:textStyle="italic"
             tools:text="WED"/>
 
         <ImageView
-            android:id="@+id/iv_weather"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:id="@+id/iv_weather_type"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_below="@id/tv_week"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:scaleType="center"
-            android:src="@drawable/icon_share_white"/>
+            tools:src="@drawable/weather_fine"/>
 
         <TextView
             android:id="@+id/tv_max_temp"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_toRightOf="@id/tv_week"
             android:gravity="bottom"
             android:textColor="@color/red_C84F01"
             android:textSize="60dp"
-            tools:text="8"/>
+            tools:text="85"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_alignTop="@id/tv_max_temp"
             android:layout_toRightOf="@id/tv_max_temp"
             android:gravity="bottom"
+            android:text="@string/temp_hint"
             android:textColor="@color/red_C84F01"
-            android:textSize="60dp"
-            android:text="@string/temp_hint"/>
+            android:textSize="60dp"/>
 
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/detail_right_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/base_padding"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:layout_weight="1"
         android:orientation="horizontal">
@@ -77,7 +81,7 @@
                 android:gravity="center"
                 android:text="MIN"
                 android:textColor="@color/red_84593E"
-                android:textSize="@dimen/font_header_size"/>
+                android:textSize="@dimen/font_small_size"/>
 
             <TextView
                 android:id="@+id/tv_min_temp"
@@ -85,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="@color/red_84593E"
-                android:textSize="@dimen/font_big_title"
+                android:textSize="@dimen/font_middle_size"
                 tools:text="3°"/>
 
         </LinearLayout>
@@ -96,6 +100,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_padding"
             android:layout_marginRight="@dimen/base_padding"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -106,9 +111,9 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/activity_horizontal_margin"
                 android:gravity="center"
-                android:text="WS"
+                android:text="WS 级"
                 android:textColor="@color/red_84593E"
-                android:textSize="@dimen/font_header_size"/>
+                android:textSize="@dimen/font_small_size"/>
 
             <TextView
                 android:id="@+id/tv_wind_strong"
@@ -116,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="@color/red_84593E"
-                android:textSize="@dimen/font_big_title"
+                android:textSize="@dimen/font_small_size"
                 tools:text="微风"/>
 
         </LinearLayout>
@@ -126,6 +131,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_padding"
             android:layout_marginRight="@dimen/base_padding"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -138,7 +144,7 @@
                 android:gravity="center"
                 android:text="PM2.5"
                 android:textColor="@color/red_84593E"
-                android:textSize="@dimen/font_header_size"/>
+                android:textSize="@dimen/font_small_size"/>
 
             <TextView
                 android:id="@+id/tv_value_pm"
@@ -146,7 +152,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="@color/red_84593E"
-                android:textSize="@dimen/font_big_title"
+                android:textSize="@dimen/font_middle_size"
                 tools:text="3"/>
 
         </LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/brown_C75000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <View
+                style="@style/horizontal_line_yellow"
+                android:layout_marginTop="@dimen/toolbar_height"/>
+
+            <TextView
+                android:id="@+id/tv_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:textColor="@color/yellow_F4E1C1"
+                android:textSize="@dimen/font_small_size"
+                tools:text="hangzhou"/>
+
+            <TextView
+                android:id="@+id/tv_weather_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/base_padding"
+                android:textColor="@color/yellow_F4E1C1"
+                android:textSize="@dimen/font_big_title"
+                tools:text="Overcast"/>
+
+            <ImageView
+                android:id="@+id/iv_weather_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="30dp"/>
+
+            <View
+                style="@style/horizontal_line_yellow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:text="CURRENT TEMPERATRUE"
+                android:textColor="@color/yellow_F4E1C1"
+                android:textSize="@dimen/font_small_size"/>
+
+            <TextView
+                android:id="@+id/tv_current_temp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:gravity="bottom"
+                android:textColor="@color/yellow_F4E1C1"
+                android:textSize="100dp"
+                tools:text="7°"/>
+
+            <View
+                style="@style/horizontal_line_yellow"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/index_width"
+                        android:gravity="center"
+                        android:text="MAX"
+                        android:textColor="@color/brown_561D00"
+                        android:textSize="@dimen/font_small_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_max_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:gravity="bottom"
+                        android:textColor="@color/brown_561D00"
+                        android:textSize="30dp"
+                        tools:text="70°"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/vertical_line_yellow"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/index_width"
+                        android:gravity="center"
+                        android:text="MIN"
+                        android:textColor="@color/brown_561D00"
+                        android:textSize="@dimen/font_small_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_min_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:gravity="bottom"
+                        android:textColor="@color/brown_561D00"
+                        android:textSize="30dp"
+                        tools:text="-70°"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontal_line_yellow"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/index_width"
+                        android:gravity="center"
+                        android:text="HUMIDITY"
+                        android:textColor="@color/brown_561D00"
+                        android:textSize="@dimen/font_small_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_humidity_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:gravity="bottom"
+                        android:textColor="@color/brown_561D00"
+                        android:textSize="30dp"
+                        tools:text="10%"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/vertical_line_yellow"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/index_width"
+                        android:gravity="center"
+                        android:text="PRECIP. %"
+                        android:textColor="@color/brown_561D00"
+                        android:textSize="@dimen/font_small_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_precip_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:gravity="bottom"
+                        android:textColor="@color/brown_561D00"
+                        android:textSize="30dp"
+                        tools:text="20%"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontal_line_yellow"/>
+
+            <ImageView
+                android:id="@+id/btn_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/index_width"
+                android:background="@drawable/ic_settings_yellow_f4e1c1"
+                android:scaleType="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/yellow_F4E1C1">
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/rv_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/toolbar_height">
+
+        </com.jude.easyrecyclerview.EasyRecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

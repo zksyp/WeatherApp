@@ -109,11 +109,17 @@
     <color name="grey_dark_888888">#888888</color>
 
     <!--主背景颜色-->
-    <color name="yellow">#F4E1C1</color>
+    <color name="yellow_F4E1C1">#F4E1C1</color>
 
     <color name="red_C84F01">#C84F01</color>
 
     <color name="red_84593E">#84593E</color>
 
     <color name="yellow_ECD9B9">#ECD9B9</color>
+    
+    <color name="brown_C75000">#C75000</color>
+
+    <color name="yellow_7FF4E1C1">#7FF4E1C1</color>
+
+    <color name="brown_561D00">#561D00</color>
 </resources>

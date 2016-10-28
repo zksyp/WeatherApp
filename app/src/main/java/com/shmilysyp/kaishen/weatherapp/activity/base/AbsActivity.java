@@ -2,6 +2,8 @@ package com.shmilysyp.kaishen.weatherapp.activity.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -76,5 +78,23 @@ public abstract class AbsActivity extends HandlerProviderActivity {
 
     protected void afterCreate(Bundle saveInstanceState){
 
+    }
+
+    /**
+     * 获取一个recycleView使用的竖直排列LinearLayoutManager
+     */
+    protected LinearLayoutManager getLinearLayoutManager() {
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        return layoutManager;
+    }
+
+    /**
+     * 获取一个recycleView使用的竖直排列GridLayoutManager
+     */
+    protected GridLayoutManager getGridLayoutManager(int spanCount) {
+        GridLayoutManager layoutManager = new GridLayoutManager(this, spanCount);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        return layoutManager;
     }
 }

@@ -644,9 +644,31 @@
     </style>
 
     <style name="normal_vertical_line">
-        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/yellow_ECD9B9</item>
+    </style>
+
+    <style name="horizontal_line_brown">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@color/brown_C75000</item>
+    </style>
+
+    <style name="horizontal_line_yellow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_width</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@color/yellow_7FF4E1C1</item>
+    </style>
+
+    <style name="vertical_line_yellow">
+        <item name="android:layout_width">@dimen/line_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/yellow_7FF4E1C1</item>
     </style>
 
 </resources>

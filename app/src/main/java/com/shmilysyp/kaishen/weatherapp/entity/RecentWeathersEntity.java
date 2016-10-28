@@ -23,8 +23,12 @@ public class RecentWeathersEntity {
     @Expose
     public WeatherEntity todayWeather;//今日天气
 
+    @SerializedName("history")
+    @Expose
+    public List<WeatherEntity> historyWeather;//历史两天天气
+
     @SerializedName("forecast")
     @Expose
-    public List<WeatherEntity> forecastWeather;//最近七天天气
+    public List<WeatherEntity> forecastWeather;//最新四天天气
 
 }

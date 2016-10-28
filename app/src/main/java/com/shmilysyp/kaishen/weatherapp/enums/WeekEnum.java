@@ -11,7 +11,8 @@ public enum WeekEnum implements BaseEnum {
     Wednesday("星期三", 3, "WED"),
     Thursday("星期四", 4, "THU"),
     Friday("星期五", 5, "FRI"),
-    Saturday("星期六", 6, "SAT");
+    Saturday("星期六", 6, "SAT"),
+    Unknow("未知", 7, "UNK");
 
     public String desc;
 
@@ -56,7 +57,28 @@ public enum WeekEnum implements BaseEnum {
             case 6:
                 return Saturday;
             default:
-                break;
+                return Unknow;
+        }
+    }
+
+    public static WeekEnum stringValueOf(String desc){
+        switch (desc){
+            case "星期天":
+                return Sunday;
+            case "星期一":
+                return Monday;
+            case "星期二":
+                return Tuesday;
+            case "星期三":
+                return Wednesday;
+            case "星期四":
+                return Thursday;
+            case "星期五":
+                return Friday;
+            case "星期六":
+                return Saturday;
+            default:
+                return Unknow;
         }
     }
 }

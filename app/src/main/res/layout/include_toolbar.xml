@@ -6,7 +6,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/topbar_bg"
+    android:background="@color/yellow_F4E1C1"
     android:minHeight="@dimen/toolbar_height"
     app:contentInsetLeft="0dp"
     app:contentInsetStart="0dp">

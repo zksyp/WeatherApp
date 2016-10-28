@@ -84,17 +84,17 @@ public class LoaderUtil {
         };
     }
 
-    public static <T> Observable.Transformer<T, T> filterError(final ErrorVerify errorVerify){
-
-        return new Observable.Transformer<T, T>() {
-            @Override
-            public Observable<T> call(Observable<T> observable) {
-                return observable
-                        .compose(LoaderUtil.onNext())
-                        .filter(verifyNetError(errorVerify));
-            }
-        };
-
-    }
+//    public static <T> Observable.Transformer<T, T> filterError(final ErrorVerify errorVerify){
+//
+//        return new Observable.Transformer<T, T>() {
+//            @Override
+//            public Observable<T> call(Observable<T> observable) {
+//                return observable
+//                        .compose(LoaderUtil.onNext())
+//                        .filter(verifyNetError(errorVerify));
+//            }
+//        };
+//
+//    }
 
 }
