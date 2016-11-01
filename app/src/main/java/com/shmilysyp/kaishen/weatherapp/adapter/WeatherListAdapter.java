@@ -1,7 +1,6 @@
 package com.shmilysyp.kaishen.weatherapp.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.LayoutRes;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,6 @@ import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.shmilysyp.kaishen.weatherapp.LogUtil;
 import com.shmilysyp.kaishen.weatherapp.R;
-import com.shmilysyp.kaishen.weatherapp.activity.main.WeatherDetailActivity;
 import com.shmilysyp.kaishen.weatherapp.entity.WeatherEntity;
 import com.shmilysyp.kaishen.weatherapp.enums.WeatherEnum;
 import com.shmilysyp.kaishen.weatherapp.enums.WeekEnum;
@@ -82,13 +80,13 @@ public class WeatherListAdapter extends RecyclerArrayAdapter<WeatherEntity> {
                 mPmValueTxt.setText(data.aqi);
             }
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getContext(), WeatherDetailActivity.class);
-                    getContext().startActivity(intent);
-                }
-            });
+//            itemView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(getContext(), WeatherDetailActivity.class);
+//                    getContext().startActivity(intent);
+//                }
+//            });
         }
     }
 }

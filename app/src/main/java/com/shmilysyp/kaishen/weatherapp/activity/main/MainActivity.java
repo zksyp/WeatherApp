@@ -1,6 +1,12 @@
 package com.shmilysyp.kaishen.weatherapp.activity.main;
 
+import android.graphics.Point;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.WindowManager;
 
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.shmilysyp.kaishen.weatherapp.BaseResponse;
@@ -15,7 +21,12 @@ import butterknife.Bind;
 import rx.Observer;
 import rx.Subscription;
 
-public class MainActivity extends AbsActivity {
+public class MainActivity extends AbsActivity implements EasyRecyclerView.OnClickListener{
+
+    @Bind(R.id.root_view)
+    View mRootView;
+    @Bind(R.id.detail_container)
+    View mDetailContainer;
 
     @Bind(R.id.info_list)
     EasyRecyclerView mInfoListView;
@@ -26,6 +37,9 @@ public class MainActivity extends AbsActivity {
     }
 
     private WeatherListAdapter mAdapter;
+    private GestureDetectorCompat mDetector;
+    private Point p = new Point();
+    private boolean isShow = false;
 
     @Override
     protected void afterCreate(Bundle saveInstanceState) {
@@ -36,7 +50,21 @@ public class MainActivity extends AbsActivity {
     }
 
     private void initEvent() {
-
+        setToolLeftListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isShow){
+                    mDetailContainer.setVisibility(View.GONE);
+                    mRootView.setLeft(p.x / 2);
+                    isShow = false;
+                }else{
+                    mDetailContainer.setVisibility(View.VISIBLE);
+                    mRootView.setLeft(0);
+                    isShow = true;
+                }
+            }
+        });
+        mDetector = new GestureDetectorCompat(this, new MyGestureListener());
     }
 
     @Override
@@ -73,9 +101,38 @@ public class MainActivity extends AbsActivity {
     }
 
     private void initView() {
+        WindowManager windowManager = this.getWindowManager();
+        windowManager.getDefaultDisplay().getSize(p);
+
+        mDetailContainer.setVisibility(View.GONE);
+        mRootView.setLeft(p.x / 2);
+
         mInfoListView.setLayoutManager(getLinearLayoutManager());
 //        mInfoListView.setRefreshListener(this);
         mAdapter = new WeatherListAdapter(this, true);
         mInfoListView.setAdapter(mAdapter);
+    }
+
+    @Override
+    public void onClick(View v) {
+
+    }
+
+    class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+
+        final int FLING_MIN_DISTANCE = 100, FLING_MIN_VELOCITY = 200;
+
+        @Override
+        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+            if(e1.getX() - e2.getX() > FLING_MIN_DISTANCE && Math.abs(velocityX) > FLING_MIN_VELOCITY){
+                mDetailContainer.setVisibility(View.VISIBLE);
+                Point p = new Point();
+                WindowManager windowManager = MainActivity.this.getWindowManager();
+                windowManager.getDefaultDisplay().getSize(p);
+                mRootView.setLeft(0);
+                return true;
+            }
+            return true;
+        }
     }
 }

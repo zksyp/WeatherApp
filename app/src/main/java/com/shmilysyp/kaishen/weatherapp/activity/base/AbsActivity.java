@@ -6,6 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.shmilysyp.kaishen.weatherapp.R;
@@ -29,6 +30,9 @@ public abstract class AbsActivity extends HandlerProviderActivity {
 
     @Bind(R.id.error_load_note)
     protected TextView mReloadNote;
+
+    @Bind(R.id.left_btn)
+    ImageView mLeftBtn;
 
     protected ViewGroup mMainView;
 
@@ -96,5 +100,9 @@ public abstract class AbsActivity extends HandlerProviderActivity {
         GridLayoutManager layoutManager = new GridLayoutManager(this, spanCount);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         return layoutManager;
+    }
+
+    public void setToolLeftListener(View.OnClickListener leftListener){
+        mLeftBtn.setOnClickListener(leftListener);
     }
 }
