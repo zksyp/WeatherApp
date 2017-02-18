@@ -1,4 +1,4 @@
-package com.shmilysyp.kaishen.weatherapp;
+package com.shmilysyp.kaishen.weatherapp.http;
 
 import java.util.concurrent.TimeUnit;
 

@@ -6,9 +6,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.jude.easyrecyclerview.EasyRecyclerView;
-import com.shmilysyp.kaishen.weatherapp.BaseResponse;
-import com.shmilysyp.kaishen.weatherapp.LoaderUtil;
-import com.shmilysyp.kaishen.weatherapp.LogUtil;
+import com.shmilysyp.kaishen.weatherapp.entity.BaseResponse;
+import com.shmilysyp.kaishen.weatherapp.http.LoaderUtil;
+import com.shmilysyp.kaishen.weatherapp.utils.LogUtil;
 import com.shmilysyp.kaishen.weatherapp.R;
 import com.shmilysyp.kaishen.weatherapp.activity.base.AbsActivity;
 import com.shmilysyp.kaishen.weatherapp.adapter.WeatherListAdapter;

@@ -1,6 +1,8 @@
-package com.shmilysyp.kaishen.weatherapp;
+package com.shmilysyp.kaishen.weatherapp.http;
 
+import com.shmilysyp.kaishen.weatherapp.entity.BaseResponse;
 import com.shmilysyp.kaishen.weatherapp.entity.CityEntity;
+import com.shmilysyp.kaishen.weatherapp.entity.CityWeatherInfo;
 import com.shmilysyp.kaishen.weatherapp.entity.RecentWeathersEntity;
 
 import retrofit2.http.GET;

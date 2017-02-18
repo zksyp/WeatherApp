@@ -1,4 +1,4 @@
-package com.shmilysyp.kaishen.weatherapp;
+package com.shmilysyp.kaishen.weatherapp.http;
 
 /**
  * Created by kaishen on 16/10/18.

@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
-import com.shmilysyp.kaishen.weatherapp.LogUtil;
+import com.shmilysyp.kaishen.weatherapp.utils.LogUtil;
 import com.shmilysyp.kaishen.weatherapp.R;
 import com.shmilysyp.kaishen.weatherapp.entity.WeatherEntity;
 import com.shmilysyp.kaishen.weatherapp.enums.WeatherEnum;

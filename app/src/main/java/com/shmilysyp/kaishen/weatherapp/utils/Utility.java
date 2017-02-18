@@ -30,7 +30,6 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.shmilysyp.kaishen.weatherapp.LogUtil;
 import com.shmilysyp.kaishen.weatherapp.R;
 
 import java.io.File;

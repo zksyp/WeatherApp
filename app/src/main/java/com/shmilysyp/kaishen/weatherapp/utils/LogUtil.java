@@ -1,4 +1,4 @@
-package com.shmilysyp.kaishen.weatherapp;
+package com.shmilysyp.kaishen.weatherapp.utils;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -13,41 +13,46 @@ import org.json.JSONObject;
 
 public class LogUtil {
 
-    private static String DEFAULT_TAG = "toys";
+    static {
+        debuggable = true;
+    }
+
+    public static boolean debuggable;
+    private static String DEFAULT_TAG = "TAG";
 
     public static void v(String tag, String msg) {
-        if (BuildConfig.DEBUG) {
+        if (debuggable) {
             largeLogV(tag, msg);
         }
     }
 
     public static void i(String tag, String msg) {
-        if (BuildConfig.DEBUG) {
+        if (debuggable) {
             largeLogI(tag, msg);
         }
     }
 
     public static void e(String tag, String msg) {
-        if (BuildConfig.DEBUG) {
+        if (debuggable) {
             largeLogE(tag, msg);
         }
     }
 
 
     public static void v(String msg) {
-        if (BuildConfig.DEBUG) {
+        if (debuggable) {
             largeLogV(DEFAULT_TAG, msg);
         }
     }
 
     public static void i(String msg) {
-        if (BuildConfig.DEBUG) {
+        if (debuggable) {
             largeLogI(DEFAULT_TAG, msg);
         }
     }
 
     public static void e(String msg) {
-        if (BuildConfig.DEBUG) {
+        if (debuggable) {
             largeLogE(DEFAULT_TAG, msg);
         }
     }

@@ -1,4 +1,8 @@
-package com.shmilysyp.kaishen.weatherapp;
+package com.shmilysyp.kaishen.weatherapp.http;
+
+import com.shmilysyp.kaishen.weatherapp.entity.BaseResponse;
+import com.shmilysyp.kaishen.weatherapp.entity.ResponseCode;
+import com.shmilysyp.kaishen.weatherapp.utils.LogUtil;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package com.shmilysyp.kaishen.weatherapp;/*
+package com.shmilysyp.kaishen.weatherapp.http;/*
  * Copyright (C) 2015 Square, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,8 @@ package com.shmilysyp.kaishen.weatherapp;/*
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import android.util.Log;
+
+import com.shmilysyp.kaishen.weatherapp.utils.LogUtil;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -32,6 +33,7 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okio.Buffer;
 import okio.BufferedSource;
+
 
 /**
  * An OkHttp interceptor which logs request and response information. Can be applied as an
@@ -104,10 +106,10 @@ public final class HttpLoggingInterceptor implements Interceptor {
     public interface Logger {
         void log(String message);
 
-        /**r
+        /**
          * A {@link Logger} defaults output appropriate for the current platform.
          */
-        Logger DEFAULT = null;
+        Logger DEFAULT = (msg) -> LogUtil.i(msg);
     }
 
     public HttpLoggingInterceptor() {
@@ -156,7 +158,7 @@ public final class HttpLoggingInterceptor implements Interceptor {
         if (!logHeaders && hasRequestBody) {
             requestStartMessage += " (" + requestBody.contentLength() + "-byte body)";
         }
-        Log.e("OkHttp-request", requestStartMessage);
+        LogUtil.i("OkHttp", requestStartMessage);
 
         if (logHeaders) {
             if (hasRequestBody) {
@@ -194,7 +196,7 @@ public final class HttpLoggingInterceptor implements Interceptor {
                 }
 
                 logger.log("");
-                LogUtil.json("OkHttp-request", buffer.readString(charset));
+                LogUtil.e("OkHttp", buffer.readString(charset));
 
                 logger.log("--> END " + request.method()
                         + " (" + requestBody.contentLength() + "-byte body)");
@@ -208,7 +210,7 @@ public final class HttpLoggingInterceptor implements Interceptor {
         ResponseBody responseBody = response.body();
         long contentLength = responseBody.contentLength();
         String bodySize = contentLength != -1 ? contentLength + "-byte" : "unknown-length";
-        LogUtil.e("OkHttp-response", "<-- " + response.code() + ' ' + response.message() + ' '
+        LogUtil.e("OkHttp", "<-- " + response.code() + ' ' + response.message() + ' '
                 + response.request().url() + " (" + tookMs + "ms" + (!logHeaders ? ", "
                 + bodySize + " body" : "") + ')');
 
@@ -240,10 +242,10 @@ public final class HttpLoggingInterceptor implements Interceptor {
                         return response;
                     }
                 }
-                if (contentType != null && !contentType.toString().startsWith("image")) {
+                if (!String.valueOf(contentType).startsWith("image")) {
                     if (contentLength != 0) {
                         logger.log("");
-                        LogUtil.json("OkHttp-response", buffer.clone().readString(charset));
+                        LogUtil.e("OkHttp", buffer.clone().readString(charset));
                     }
                 }
                 logger.log("<-- END HTTP (" + buffer.size() + "-byte body)");
